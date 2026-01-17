@@ -13,3 +13,15 @@ Plot f(x) vs x graph for each functions.
 */
 
 //Solution
+
+#include<iostream>
+#include<cmath>
+#include<fstream>
+#include<iomanip>
+
+using namespace std;
+
+int main(){
+
+	return 0;
+}
