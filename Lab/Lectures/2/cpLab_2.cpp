@@ -21,6 +21,33 @@ Plot f(x) vs x graph for each functions.
 
 using namespace std;
 
+//Function for 1st equation
+double f_1(double x){
+    double y;
+
+    y = x*exp(x) - 1;
+
+    return y;
+}
+
+//Function for 2nd equation
+double f_2(double x){
+    double y;
+
+    y = cos(x) - x*exp(x);
+
+    return y;
+}
+
+//Function for 3rd equation
+double f_3(double x){
+    double y;
+
+    y = x*cos(x) + sin(x);
+
+    return y;
+}
+
 int main(){
 
 	return 0;
