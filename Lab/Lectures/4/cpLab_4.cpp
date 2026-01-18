@@ -26,7 +26,7 @@ using namespace std;
 double func(double x){
 	double y;
 
-	y = sin(x) - exp(x);
+	y = sin(x) + exp(x);
 
 	return y;
 }
