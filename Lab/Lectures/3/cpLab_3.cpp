@@ -128,7 +128,7 @@ int main(){
 
     for(double i = 0.00; i <= 20; i += 0.01){
 
-            fadata << fixed << setprecision(4) << i << "\t" << func_a(i, 0) << endl;
+    	fadata << fixed << setprecision(4) << i << "\t" << func_a(i, 0) << endl;
     }    
 
     fadata.close();
@@ -137,7 +137,7 @@ int main(){
 
     for(double i = 0.00; i <= 20.00; i += 0.01){
 
-	fbdata << fixed << setprecision(4) << i << "\t" << func_b(i, 5*M_PI) << endl;
+		fbdata << fixed << setprecision(4) << i << "\t" << func_b(i, 5*M_PI) << endl;
     }
 
     fbdata.close();
@@ -145,24 +145,21 @@ int main(){
     ofstream allplot("all_plot.dat");
 
     for(double i = 0.01; i <= 20.00; i += 0.01){
-	if(func_b(i, 5*M_PI) >= 40 || func_b(i, 5*M_PI) <= -40){
-	    allplot << fixed << setprecision(2) << i << "\t" << func_a(i, 0) << "\t" << func_a(i, 1) << "\t" << "nan" << endl;
-	}
-	else if(func_a(i, 0) >= 40 || func_a(i, 0) <= -40){
-	    allplot << fixed << setprecision(2) << i << "\t" << "nan\t" << func_a(i, 1) << "\t" << func_b(i, 5*M_PI) << endl;
-	}
-	else if(func_a(i, 1) >= 40 || func_a(i, 1) <= -40){
-	    allplot << fixed << setprecision(2) << i << "\t" << func_a(i, 0) << "\t" << "nan" << "\t" << func_b(i, 5*M_PI) << endl;
-	}
-	else if(func_a(i,0) < 40 && func_a(i, 0) > -40 && func_a(i,1) < 40 && func_a(i, 1) > -40 && func_b(i, 5*M_PI) < 40 && func_b(i, 5*M_PI) > -40){
+		if(func_b(i, 5*M_PI) >= 40 || func_b(i, 5*M_PI) <= -40){
+	    	allplot << fixed << setprecision(2) << i << "\t" << func_a(i, 0) << "\t" << func_a(i, 1) << "\t" << "nan" << endl;
+		}
+		else if(func_a(i, 0) >= 40 || func_a(i, 0) <= -40){
+	    	allplot << fixed << setprecision(2) << i << "\t" << "nan\t" << func_a(i, 1) << "\t" << func_b(i, 5*M_PI) << endl;
+		}
+		else if(func_a(i, 1) >= 40 || func_a(i, 1) <= -40){
+	    	allplot << fixed << setprecision(2) << i << "\t" << func_a(i, 0) << "\t" << "nan" << "\t" << func_b(i, 5*M_PI) << endl;
+		}
+		else if(func_a(i,0) < 40 && func_a(i, 0) > -40 && func_a(i,1) < 40 && func_a(i, 1) > -40 && func_b(i, 5*M_PI) < 40 && func_b(i, 5*M_PI) > -40){
             allplot << fixed << setprecision(2) << i << "\t" << func_a(i, 0) << "\t" << func_a(i, 1) << "\t" << func_b(i, 5*M_PI) << endl;
-	}
+		}
     }
 
     allplot.close();
-
-    //there might be some issues while ploting 
-    //some numbers enetring inside the .dat files which shouldn't be, if you find any solution let me know
 
     /*
       enter the following command to plot all_plot.dat file
@@ -172,19 +169,11 @@ int main(){
 
     //from the plot of all_plot.dat file you can take 6 aproximate solution, 3 from m=0 and 3 from m=1
 
-    double a[6] = {1.49, 2.95, 4.43, 5.88, 7.38, 8.82}; //aproximate solutions
+    double a[6] = {1.49, 2.95, 4.43, 5.88, 7.38, 8.82};    //aproximate solutions
 
     for(int i = 0; i < 6; i++){
-	cout << "For m = " << i << "\t" "The value of hd is: " << fixed << NR(a[i], i) << endl;
+		cout << "For m = " << i << "\t" "The value of hd is: " << fixed << NR(a[i], i) << endl;
     }
 
     return 0;
 }
-
-//Before End
-/*
-Thank you,  whoever reading this.
-Maybe you know a better solution or maybe i did a mistake or maybe your have trouble with some other ploblem, I will be happy to help.
-If your need any help, you can just ask me.
-Again Thank You.
-*/
