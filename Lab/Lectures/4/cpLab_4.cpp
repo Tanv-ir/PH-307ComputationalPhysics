@@ -15,7 +15,7 @@ write a c++ code using Newton
 
 //Solution
 
-#include<isotream>
+#include<iostream>
 #include<cmath>
 #include<fstream>
 #include<iomanip>
@@ -68,7 +68,7 @@ int main(){
 	cin >> h;
 	
 	cout << fixed << setprecision(4) << forward(x, h) << endl;
-	cout << fixed << setprecition(4) << backward(x, h) << endl;
+	cout << fixed << setprecision(4) << backward(x, h) << endl;
 	cout << fixed << setprecision(4) << central(x, h) << endl;
 
 	double a;     //smallest input value for plot
@@ -82,7 +82,7 @@ int main(){
 	ofstream plotdata("func.dat");    //creates an empty file name func.dat
 
 	for(double i = a; i <= b; i += 0.001){
-		plotdata << fixed << setprecition(4) << func(i) << "\t\t" << i << endl;
+		plotdata << fixed << setprecision(4) << func(i) << "\t\t" << i << endl;
 	}
 
 	plotdata.close();    //prevents the func.dat file to take anymore inputs
