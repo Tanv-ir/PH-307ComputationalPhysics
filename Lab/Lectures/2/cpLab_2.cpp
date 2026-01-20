@@ -43,7 +43,7 @@ double func_2(double x){
 double func_3(double x){
     double y;
 
-    y = x*cos(x) + sin(x);
+    y = x*sin(x) + cos(x);
 
     return y;
 }
@@ -244,3 +244,4 @@ int main(){
 
     return 0;
 }
+
