@@ -1,4 +1,4 @@
-If you don't have GCC/g++ compiler in your windows mechine the following link provides a step by step guideline on how to install GCC/g+= in windows.
+If you don't have GCC/g++ compiler in your windows mechine the following link provides a step by step guideline on how to install GCC/g++ in windows.
 
 
     https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/
