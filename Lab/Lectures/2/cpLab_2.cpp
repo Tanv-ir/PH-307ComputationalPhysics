@@ -242,19 +242,5 @@ int main(){
 	 cout << " You can now run GNUPlot " << endl;	
     }
 
-//create a brach for plot input...
-
-    ofstream testdata("cos.dat");
-
-    for(double i = -1; i <= 1; i += 0.01){
-	testdata << fixed << setprecision(4) << i << "\t\t" << i*exp(i) - 1 << endl;
-    }
-
-    testdata.close();
-
-    cout << func_1(M_PI) << endl;    
-    cout << func_2(M_PI) << endl;
-    cout << func_3(M_PI) << endl;
-	
     return 0;
 }
