@@ -1,0 +1,12 @@
+Exercise:
+
+1. Find the root of the f (x) = xex − 1 = 0 using all the three methods, corrected up to three decimal places.
+
+2. Find the root of the cos(x) − xex = 0 using all the three methods, corrected up to three decimal places.
+
+3. Determine the smallest positive root of x − e−x up to three significant figure.
+
+4. Find a root of xsinx + cosx = 0
+
+5. Find the square root of 18 using Newton-Raphson method.
+    (Hints: you need to solve x^2 − n = 0 where n is the number and x is its square root.)
