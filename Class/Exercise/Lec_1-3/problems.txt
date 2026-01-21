@@ -12,4 +12,5 @@ Exercise:
     (Hints: you need to solve x^2 − n = 0 where n is the number and x is its square root.)
 
 
-Problem 1, 2 and 4 had been solved in lab. So, I will solve only 3 and 5.
+Problem 1, 2 and 4 had been solved in lab.
+
